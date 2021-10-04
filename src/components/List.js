@@ -7,7 +7,7 @@ function List(props) {
     <>
       {props.dataArr.map((e) => {
           return (
-              <ListItem data={e} />
+              <ListItem key={e.title} data={e} />
           )
       })}
     </>
