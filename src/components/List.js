@@ -6,8 +6,9 @@ function List(props) {
   return (
     <>
       {props.dataArr.map((e) => {
+        // e is for every element in that array
           return (
-              <ListItem key={e.title} data={e} />
+              <ListItem key={e.id} data={e} />
           )
       })}
     </>

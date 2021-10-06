@@ -1,10 +1,17 @@
-import React from 'react'
+import React ,{useState} from 'react'
 import './ListItem.css';
 
 function ListItem(props) {
+
+    const [del ,setDel] = useState(false);
+
+    const onClickHandler = (event) => {
+        console.log(event);
+        setDel(true);
+    }
     return (
         <div className='item'>
-            <p> {props.data.title}</p>
+            <p className= {`${del? 'delete' : ''}`} onClick={onClickHandler}> {props.data.title}</p>
         </div>
     )
 }

@@ -12,3 +12,8 @@
 p {
     padding: 15px;
 }
+
+.delete {   /* class added when user clicks the text , used as del*/
+    color: rgb(87, 78, 78);
+    text-decoration: line-through;
+}

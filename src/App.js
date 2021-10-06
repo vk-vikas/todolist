@@ -5,16 +5,16 @@ import { useState } from "react";
 
 let arr = [
   {
-    id: '1',
-    title: "buy a shirt",
+    id: "1",
+    title: "Buy a shirt",
   },
   {
-    id: '2',
-    title: "build a todolist app",
+    id: "2",
+    title: "Build a todolist app",
   },
   {
-    id: '3',
-    title: "call someone",
+    id: "3",
+    title: "Buy 1 Bitcoin",
   },
 ];
 
@@ -22,12 +22,11 @@ function App() {
   const [array, setArray] = useState(arr);
 
   const addSaveHandler = (enteredtile) => {
-    const newData = {
+    const newData = { 
+      // title added so that it can be renedered where we render title 
       id: Math.random().toString(),
       title: enteredtile,
     };
-
-    console.log([newData, ...array]);
 
     setArray([newData, ...array]);
   };
