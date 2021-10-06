@@ -1,13 +1,14 @@
 form {
-    background-color: #61C0BF;
-    margin: 50px 80px;
+    background-color: #424874;
+    margin: 50px 300px;
     border-radius: 10px;
+    box-shadow:  2px 5px 10px #424874 ; 
 }
 
 label {
     padding: 15px;
     font-size: 3rem;
-    color: black;
+    color: white;
     display: block;
     font-weight: 600;
 }

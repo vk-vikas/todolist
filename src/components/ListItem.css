@@ -1,11 +1,12 @@
 
 
 .item {
-    background-color: #BBDED6;
+    background-color: #A6B1E1;
     border-radius: 10px;
     font-size: 2rem;
     font-weight: 500;
-    margin: 0 80px;
+    margin: 0 300px;
+    box-shadow:  2px 5px 10px #424874 ; 
     
 }
 
@@ -16,4 +17,7 @@ p {
 .delete {   /* class added when user clicks the text , used as del*/
     color: rgb(87, 78, 78);
     text-decoration: line-through;
+    background-color: #DCD6F7;
+    border-radius: 10px;
+    
 }

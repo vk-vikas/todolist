@@ -1,19 +1,21 @@
-import React ,{useState} from 'react'
-import './ListItem.css';
+import React, { useState } from "react";
+import "./ListItem.css";
 
 function ListItem(props) {
+  const [del, setDel] = useState(false);
 
-    const [del ,setDel] = useState(false);
-
-    const onClickHandler = (event) => {
-        console.log(event);
-        setDel(true);
-    }
-    return (
-        <div className='item'>
-            <p className= {`${del? 'delete' : ''}`} onClick={onClickHandler}> {props.data.title}</p>
-        </div>
-    )
+  const onClickHandler = (event) => {
+    console.log(event);
+    setDel(!del);   // toggle strike off and on
+  };
+  return (
+    <div className="item">
+      <p className={`${del ? "delete" : ""}`} // dynamically class added
+      onClick={onClickHandler}>
+        {props.data.title}
+      </p>
+    </div>
+  );
 }
 
-export default ListItem
+export default ListItem;
